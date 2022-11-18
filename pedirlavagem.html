@@ -3,20 +3,50 @@
   <head>
       <title>TuringWash</title>
       <link rel="shortcut icon" href="./images/turingwash-icon.svg" type="image/x-icon">
-      <style></style>
+      <style>
+        .header{
+          background-color: #BCF7FF;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 18px;
+        }
+        .header__icon{
+          display: flex;
+          align-items: flex-start;
+        }
+        .header__links{          
+          width: 218px;
+          height: 17px;
+          display: flex;
+          align-items: flex-end;          
+          justify-content: space-between;  
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;          
+          color: #000000
+        }
+
+        .header__button{
+          display: flex;
+          /*align-items: flex-end;*/
+        }
+
+
+
+      </style>
       <script></script>
   </head>
   <body>
     <div>
-      <header class="header">
-        <img src="./images/turingwash-logo.svg" alt="Ituring">
-        <div class="header__links">
-          <a class="header__links-principais" href="./meuscarros.html" title="Meus Carros">Meus Carros</a>
-          <a class="header__links-principais" href="./minhaslavagens.html" title="Minhas Lavagens">Minhas Lavagens</a>
-        </div>
-        <div class="header_button">
-          <a href="#"><button>Sair</button></a>
-        </div>
+      <header class="header">        
+        <img src="./images/turingwash-logo.svg" alt="Ituring"  class="header__icon">        
+        <nav class="menu">
+          <a class="menu__link" href="./meuscarros.html" title="Meus Carros">Meus Carros</a>
+          <a class="menu__link" href="./minhaslavagens.html" title="Minhas Lavagens">Minhas Lavagens</a>
+          <a class="menu__link  menu__link--button" href="#" title="Sair">Sair</a>
+        </nav>        
       </header>
       <main class="main-content">
         <section class="employee-options">
@@ -45,10 +75,12 @@
             </div>
             <div class="employee-info__more-details">
               <spam>Nota 4.5 (998 avaliações)</spam>
-              <spam>R$ 80</spam><br>
-              <spam>Ver Avaliações</spam>
-              <a href="#"><button>Lavar meu carro</button></a>
+              <spam>R$ 80</spam><br>                            
             </div>
+            <nav class="buttons">
+              <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
+              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
+            </nav>
           </div>
           <div class="employee-info">
             <div>
@@ -57,10 +89,12 @@
             </div>
             <div class="employee-info__more-details">
               <spam>Nota 4.7 (489 avaliações)</spam>
-              <spam>R$ 75</spam><br>
-              <spam>Ver Avaliações</spam>
-              <a href="#"><button>Lavar meu carro</button></a>
+              <spam>R$ 75</spam><br>              
             </div>
+            <nav class="buttons">
+              <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
+              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
+            </nav>
           </div>
           <div class="employee-info">
             <div>
@@ -69,10 +103,12 @@
             </div>
             <div class="employee-info__more-details">
               <spam>Nota 4.3 (783 avaliações)</spam>
-              <spam>R$ 90</spam><br>
-              <spam>Ver Avaliações</spam>
-              <a href="#"><button>Lavar meu carro</button></a>
+              <spam>R$ 90</spam><br>              
             </div>
+            <nav class="buttons">
+              <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
+              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
+            </nav>
           </div>
           <div class="employee-info">
             <div>
@@ -82,8 +118,10 @@
             <div class="employee-info__more-details">
               <spam>Nota 4.1 (801 avaliações)</spam>
               <spam>R$ 60</spam><br>
-              <spam>Ver Avaliações</spam>
-              <a href="#"><button>Lavar meu carro</button></a>
+              <nav class="buttons">
+                <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
+                <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
+              </nav>          
             </div>
           </div>
         </section>
