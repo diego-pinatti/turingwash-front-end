@@ -7,30 +7,79 @@
         .header{
           background-color: #BCF7FF;
           display: flex;
-          align-items: center;
           justify-content: space-between;
-          padding: 18px;
+          align-items: center;
+          padding: 0px 15px;
+        }
+        .menu__link{
+          color: #000000;
+          font-size: 14px;
+          font-weight: 700;
+          padding: 14px 13px 15px;
+          text-decoration: none;
+        }
+        .menu__link--button{
+          background-color: #8FF2FF;
+          border-radius: 5px;
+          padding: 4px 9px 3px 10px;
         }
         .header__icon{
-          display: flex;
-          align-items: flex-start;
-        }
-        .header__links{          
-          width: 218px;
-          height: 17px;
-          display: flex;
-          align-items: flex-end;          
-          justify-content: space-between;  
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 14px;          
-          color: #000000
+          padding: 0;
+          width: 75px;
+          height: 75px;
         }
 
-        .header__button{
+        .main-content{
+          background-color: #EAF7FF;      
+        }
+        .employee-options__title{
+          display: flex;          
+          text-align: center;
+          justify-content: center;
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .selections{
           display: flex;
-          /*align-items: flex-end;*/
+          justify-content: space-between;
+          font-size: 12px;
+          padding: 23px 100px;
+          background-color: gray;
+        }
+        .employee-info{
+          display: flex;
+          justify-content: space-between;
+          background-color: #e34f4f;
+          margin: 16px 35px;
+          border-radius: 10px;
+        }
+
+        .employee-info__icon{
+          width: 75px;
+          height: 75px;
+        }
+
+        .footer{
+          background-color: #BCF7FF;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 24px 11px ;
+        }
+        .footer__links{
+          font-size: 15px;
+          color: #000000;
+          text-decoration: none;
+          list-style: none;
+          padding: 10px 10px 10px;
+        }
+        .footer__rights{
+          padding: 55px 11px 10px;
+        }
+        .footer__icon{
+          padding: 16px 0px 42px 20px;
+          width: 100px;
+          height: 100px;
         }
 
 
@@ -55,22 +104,26 @@
           </header>
         <section>         
         <section class="selections">
-          <spam>Lavar</spam>
-          <select>
-            <option value="">Nissan Kicks</option>
-            <option value="">Chevrolet Onix</option>
-          </select>
-          <spam>Ordenar por</spam>
-          <select>
-            <option value="">proximidade</option>
-            <option value="">preço</option>
-            <option value="">avaliação</option>
-          </select>            
+          <div class="selections__lavar">
+            <spam>Lavar</spam>
+            <select>
+              <option value="">Nissan Kicks</option>
+              <option value="">Chevrolet Onix</option>
+            </select>
+          </div>
+          <div class="selections__ordenar">
+            <spam>Ordenar por</spam>
+            <select>
+              <option value="">proximidade</option>
+              <option value="">preço</option>
+              <option value="">avaliação</option>
+            </select>
+          </div>            
         </section>
         <section class="employee-card">
           <div class="employee-info">
-            <div class="employee-info__name-photo">
-              <img src="./images/profile.png" alt="João Pereira">
+            <img src="./images/profile.png" alt="João Pereira" class="employee-info__icon">
+            <div class="employee-info__name-photo">              
               <h3>João Pereira</h3>
             </div>
             <div class="employee-info__more-details">
@@ -83,8 +136,8 @@
             </nav>
           </div>
           <div class="employee-info">
-            <div>
-              <img src="./images/profile.png" alt="Joana Santos">
+            <img src="./images/profile.png" alt="Joana Santos" class="employee-info__icon">
+            <div>              
               <h3>Joana Santos</h3>
             </div>
             <div class="employee-info__more-details">
@@ -97,8 +150,8 @@
             </nav>
           </div>
           <div class="employee-info">
-            <div>
-              <img src="./images/profile.png" alt="Matheus Oliveira">
+            <img src="./images/profile.png" alt="Matheus Oliveira" class="employee-info__icon">
+            <div>              
               <h3>Matheus Oliveira</h3>
             </div>
             <div class="employee-info__more-details">
@@ -111,8 +164,8 @@
             </nav>
           </div>
           <div class="employee-info">
-            <div>
-              <img src="./images/profile.png" alt="Pedro Sampaio">
+            <img src="./images/profile.png" alt="Pedro Sampaio" class="employee-info__icon">
+            <div>              
               <h3>Pedro Sampaio</h3>
             </div>
             <div class="employee-info__more-details">
@@ -127,12 +180,12 @@
         </section>
       </main>
       <footer class="footer">
-        <img src="https://ituring.com.br/favicon.ico" alt="Ituring">
+        <img src="./images/turingwash-logo.svg" alt="Ituring"  class="footer__icon">
         <nav class="footer__links">
-          <a href="" title="Sobre">Sobre</a>
-          <a href="" title="FAQ">FAQ</a>
-          <a href="" title="Contato">Contato</a>
-          <a href="" title="Termos de uso">Termos de uso</a>
+          <li><a href="" title="Sobre">Sobre</a></li>
+          <li><a href="" title="FAQ">FAQ</a></li>
+          <li><a href="" title="Contato">Contato</a></li>
+          <li><a href="" title="Termos de uso">Termos de uso</a></li>
         </nav>
         <div class="footer__rights">
           <h3>@turingwash</h3>
