@@ -30,7 +30,8 @@
         }
 
         .main-content{
-          background-color: #EAF7FF;      
+          background-color: #EAF7FF;  
+          padding: 0px 36px 100px;    
         }
         .employee-options__title{
           display: flex;          
@@ -42,21 +43,50 @@
         .selections{
           display: flex;
           justify-content: space-between;
-          font-size: 12px;
+          font-size: 14px;
           padding: 23px 100px;
           background-color: gray;
         }
+        .selected-car__options{
+          background-color: transparent;
+          border: none;
+        }
+        .ordination__options{
+          background-color: transparent;
+          border: none;
+        }
         .employee-info{
-          display: flex;
-          justify-content: space-between;
+          display: flex;          
           background-color: #e34f4f;
           margin: 16px 35px;
           border-radius: 10px;
+          height: 80px;
+          padding: 10px;
         }
 
         .employee-info__icon{
           width: 75px;
           height: 75px;
+          
+        }
+        .employee-info__name{
+          font-size: 18px;
+          font-weight: 700;
+          padding: 5px 0px 60px 12px;          
+        }
+        .employee-info__evaluation{
+          display: flex;
+          align-items: flex-end;
+        }
+        .employee-info__price{
+          background-color: #DCFCFE;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .buttons{
+          display: flex;
+          align-items: flex-end;
+
         }
 
         .footer{
@@ -64,23 +94,40 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 24px 11px ;
+          padding: 10px;
+          
+        }
+        .footer__icon{          
+          width: 50px;
+          height: 50px;
         }
         .footer__links{
           font-size: 15px;
           color: #000000;
           text-decoration: none;
           list-style: none;
+          
+        }
+        .footer__links a{
+          color: #000000;
+          text-decoration: none;
+          list-style: none;
           padding: 10px 10px 10px;
         }
-        .footer__rights{
-          padding: 55px 11px 10px;
+        .footer__links li{
+          list-style-type: none;
+          margin: 10px;
         }
-        .footer__icon{
-          padding: 16px 0px 42px 20px;
-          width: 100px;
-          height: 100px;
+        .insta-rights__icon{
+          
+
         }
+        .insta-rights{
+          
+          
+        }
+
+        
 
 
 
@@ -104,16 +151,16 @@
           </header>
         <section>         
         <section class="selections">
-          <div class="selections__lavar">
+          <div class="selected-car">
             <spam>Lavar</spam>
-            <select>
+            <select class="selected-car__options">
               <option value="">Nissan Kicks</option>
               <option value="">Chevrolet Onix</option>
             </select>
           </div>
-          <div class="selections__ordenar">
+          <div class="ordination">
             <spam>Ordenar por</spam>
-            <select>
+            <select class="ordination__options">
               <option value="">proximidade</option>
               <option value="">preço</option>
               <option value="">avaliação</option>
@@ -123,12 +170,14 @@
         <section class="employee-card">
           <div class="employee-info">
             <img src="./images/profile.png" alt="João Pereira" class="employee-info__icon">
-            <div class="employee-info__name-photo">              
-              <h3>João Pereira</h3>
+            <div class="employee-info__name">              
+              <span>João Pereira</span>
             </div>
-            <div class="employee-info__more-details">
-              <spam>Nota 4.5 (998 avaliações)</spam>
-              <spam>R$ 80</spam><br>                            
+            <div class="employee-info__evaluation">
+              <p>Nota 4.5 (998 avaliações)</spam>
+            </div>   
+            <div class="employee-info__price"> 
+              <spam>R$ 80</spam><br>              
             </div>
             <nav class="buttons">
               <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
@@ -137,11 +186,13 @@
           </div>
           <div class="employee-info">
             <img src="./images/profile.png" alt="Joana Santos" class="employee-info__icon">
-            <div>              
-              <h3>Joana Santos</h3>
+            <div class="employee-info__name">              
+              <span>Joana Santos</span>
             </div>
-            <div class="employee-info__more-details">
+            <div class="employee-info__evaluation">
               <spam>Nota 4.7 (489 avaliações)</spam>
+            </div>   
+            <div class="employee-info__price"> 
               <spam>R$ 75</spam><br>              
             </div>
             <nav class="buttons">
@@ -151,11 +202,13 @@
           </div>
           <div class="employee-info">
             <img src="./images/profile.png" alt="Matheus Oliveira" class="employee-info__icon">
-            <div>              
-              <h3>Matheus Oliveira</h3>
+            <div class="employee-info__name">              
+              <span>Matheus Oliveira</span>
             </div>
-            <div class="employee-info__more-details">
-              <spam>Nota 4.3 (783 avaliações)</spam>
+            <div class="employee-info__evaluation">
+              <spam>Nota 4.3 (793 avaliações)</spam>
+            </div>   
+            <div class="employee-info__price"> 
               <spam>R$ 90</spam><br>              
             </div>
             <nav class="buttons">
@@ -165,12 +218,15 @@
           </div>
           <div class="employee-info">
             <img src="./images/profile.png" alt="Pedro Sampaio" class="employee-info__icon">
-            <div>              
-              <h3>Pedro Sampaio</h3>
+            <div class="employee-info__name">              
+              <span>Pedro Sampaio</span>
             </div>
-            <div class="employee-info__more-details">
+            <div class="employee-info__evaluation">
               <spam>Nota 4.1 (801 avaliações)</spam>
-              <spam>R$ 60</spam><br>
+            </div>   
+            <div class="employee-info__price"> 
+              <spam>R$ 60</spam><br>              
+            </div>
               <nav class="buttons">
                 <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
                 <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
@@ -182,14 +238,17 @@
       <footer class="footer">
         <img src="./images/turingwash-logo.svg" alt="Ituring"  class="footer__icon">
         <nav class="footer__links">
-          <li><a href="" title="Sobre">Sobre</a></li>
-          <li><a href="" title="FAQ">FAQ</a></li>
-          <li><a href="" title="Contato">Contato</a></li>
-          <li><a href="" title="Termos de uso">Termos de uso</a></li>
+          <ul>
+            <li><a href="" title="Sobre">Sobre</a></li>
+            <li><a href="" title="FAQ">FAQ</a></li>
+            <li><a href="" title="Contato">Contato</a></li>
+            <li><a href="" title="Termos de uso">Termos de uso</a></li>
+          </ul>
         </nav>
-        <div class="footer__rights">
-          <h3>@turingwash</h3>
-          <h4>2022. TuringWash. Todos os direitos reservados</h4>
+        <div class="insta-rights">
+          <img src="./images/insta_logo.png" alt="Image"  class="insta-rights__icon">
+          <span>@turingwash</span>
+          <p>2022. TuringWash. Todos os direitos reservados</p>
         </div>
       </footer>
     </div>
