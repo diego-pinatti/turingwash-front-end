@@ -55,39 +55,39 @@
           background-color: transparent;
           border: none;
         }
-        .employee-info{
-          display: flex;          
+        .employee-info{          
           background-color: #e34f4f;
           margin: 16px 35px;
           border-radius: 10px;
-          height: 80px;
-          padding: 10px;
+          height: 100px;
+          padding: 5px;
+          display: grid;
+          grid-template-columns: 100px 200px auto;          
         }
-
         .employee-info__icon{
-          width: 75px;
-          height: 75px;
           
-        }
+          width: 80px;
+          height: 80px;
+          display: flex;
+          align-self: center;
+          justify-self: center;
+          padding: 8px;
+        }  
         .employee-info__name{
+          
           font-size: 18px;
           font-weight: 700;
-          padding: 5px 0px 60px 12px;          
-        }
-        .employee-info__evaluation{
           display: flex;
-          align-items: flex-end;
+          justify-content: flex-start;
+          padding: 0px 0px 0px 4px;        
         }
-        .employee-info__price{
-          background-color: #DCFCFE;
+        .more-information{
+          background-color: purple;
           display: flex;
-          justify-content: flex-end;
+          flex-direction: column;
+          
         }
-        .buttons{
-          display: flex;
-          align-items: flex-end;
-
-        }
+        
 
         .footer{
           background-color: #BCF7FF;
@@ -169,70 +169,68 @@
         </section>
         <section class="employee-card">
           <div class="employee-info">
-            <img src="./images/profile.png" alt="João Pereira" class="employee-info__icon">
+            <img src="./images/profile.png" alt="João Pereira" class="employee-info__icon">            
             <div class="employee-info__name">              
               <span>João Pereira</span>
             </div>
-            <div class="employee-info__evaluation">
-              <p>Nota 4.5 (998 avaliações)</spam>
-            </div>   
-            <div class="employee-info__price"> 
-              <spam>R$ 80</spam><br>              
-            </div>
-            <nav class="buttons">
+            <div class="employee-info__evaluation-price-buttons">
+              <span>Nota 4.5 (998 avaliações)
+              R$ 80<br>              
               <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
-              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
-            </nav>
+              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a></span>
+            </div>
           </div>
           <div class="employee-info">
             <img src="./images/profile.png" alt="Joana Santos" class="employee-info__icon">
             <div class="employee-info__name">              
               <span>Joana Santos</span>
             </div>
-            <div class="employee-info__evaluation">
-              <spam>Nota 4.7 (489 avaliações)</spam>
-            </div>   
-            <div class="employee-info__price"> 
-              <spam>R$ 75</spam><br>              
+
+
+
+            <div class="more-information">
+              <div class="more-information__evaluation">
+                <span>Nota 4.7 (489 avaliações)
+              </div>
+              <div class="more-information__price">
+                <span>R$ 75 </span>  
+              </div>
+              <div class="more-information__button-avaliacoes">      
+                <a href="#" title="Ver avaliações">Ver avaliações </a>
+              </div>
+              <div class="more-information__button-lavar">
+                <a href="#" title="Lavar meu carro">Lavar meu carro</a></span>
+              </div>
             </div>
-            <nav class="buttons">
-              <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
-              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
-            </nav>
+
+
+
+
           </div>
           <div class="employee-info">
             <img src="./images/profile.png" alt="Matheus Oliveira" class="employee-info__icon">
             <div class="employee-info__name">              
               <span>Matheus Oliveira</span>
             </div>
-            <div class="employee-info__evaluation">
-              <spam>Nota 4.3 (793 avaliações)</spam>
-            </div>   
-            <div class="employee-info__price"> 
-              <spam>R$ 90</spam><br>              
+            <div class="employee-info__evaluation-price-buttons">
+              <span>Nota 4.3 (793 avaliações)
+              R$ 90<br>         
+              <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações </a>
+              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a></span>
             </div>
-            <nav class="buttons">
-              <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
-              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
-            </nav>
           </div>
           <div class="employee-info">
             <img src="./images/profile.png" alt="Pedro Sampaio" class="employee-info__icon">
             <div class="employee-info__name">              
               <span>Pedro Sampaio</span>
             </div>
-            <div class="employee-info__evaluation">
-              <spam>Nota 4.1 (801 avaliações)</spam>
-            </div>   
-            <div class="employee-info__price"> 
-              <spam>R$ 60</spam><br>              
-            </div>
-              <nav class="buttons">
-                <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações</a>
-                <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a>
-              </nav>          
-            </div>
-          </div>
+            <div class="employee-info__evaluation-price-buttons">
+              <span>Nota 4.1 (801 avaliações)
+              R$ 60<br>         
+              <a class="buttons__avaliacoes  buttons__avaliacoes--button" href="#" title="Ver avaliações">Ver avaliações </a>
+              <a class="buttons__lavar  buttons__lavar--button" href="#" title="Lavar meu carro">Lavar meu carro</a></span>
+            </div>          
+          </div>          
         </section>
       </main>
       <footer class="footer">
